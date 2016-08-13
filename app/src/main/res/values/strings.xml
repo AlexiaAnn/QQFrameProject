@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QQFragmentProject</string>
+    <string name="defalultTabBarBtnTitleStr">默认</string>
 </resources>
