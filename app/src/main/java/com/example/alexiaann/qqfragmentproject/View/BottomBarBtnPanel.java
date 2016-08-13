@@ -2,7 +2,6 @@ package com.example.alexiaann.qqfragmentproject.View;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.provider.ContactsContract;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -77,18 +76,22 @@ public class BottomBarBtnPanel extends RelativeLayout implements View.OnClickLis
             case R.id.bar1:
                 index = Constant.BTN_FLAG_MESSAGE;
                 mMsgBtn.setCheckedImage();
+                mMsgBtn.setCheckedTextColor();
                 break;
             case R.id.bar2:
                 index = Constant.BTN_FLAG_CONTACTS;
                 mContactsBtn.setCheckedImage();
+                mContactsBtn.setCheckedTextColor();
                 break;
             case R.id.bar3:
                 index = Constant.BTN_FLAG_NEWS;
                 mNewsBtn.setCheckedImage();
+                mNewsBtn.setCheckedTextColor();
                 break;
             case R.id.bar4:
                 index = Constant.BTN_FLAG_SETTING;
                 mSettingBtn.setCheckedImage();
+                mSettingBtn.setCheckedTextColor();
                 break;
             default:
                 break;

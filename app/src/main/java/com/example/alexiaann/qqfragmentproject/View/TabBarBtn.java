@@ -3,7 +3,6 @@ package com.example.alexiaann.qqfragmentproject.View;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.support.annotation.AttrRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -28,8 +27,8 @@ public class TabBarBtn extends LinearLayout {
     private int checkImageId;
     private String titleStr = "默认";
 
-    private final static int DEFAULT_IMAGE_WIDTH = 128;
-    private final static int DEFAULT_IMAGE_HEIGHT = 128;
+    private final static int DEFAULT_IMAGE_WIDTH = 64;
+    private final static int DEFAULT_IMAGE_HEIGHT = 64;
     private int CHECKED_COLOR = Color.rgb(29, 118, 199);
     private int UNCHECKED_COLOR = Color.GRAY;
 
@@ -131,6 +130,11 @@ public class TabBarBtn extends LinearLayout {
             textView.setText(str);
             textView.setTextColor(UNCHECKED_COLOR);
 
+        }
+    }
+    public void setCheckedTextColor(){
+        if(textView!=null){
+            textView.setTextColor(CHECKED_COLOR);
         }
     }
     @Override
