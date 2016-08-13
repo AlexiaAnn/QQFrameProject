@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.alexiaann.qqfragmentproject.View.BottomBarBtnPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alexiaann="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/bottombarbtn_borderline"
+    >
+
+    <com.example.alexiaann.qqfragmentproject.View.TabBarBtn
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        alexiaann:defaultImage="@drawable/img_1"
+        alexiaann:checkedImage="@drawable/img_2"
+        alexiaann:titleStr="hello"
+        android:id="@+id/bar1"
+        android:layout_alignParentLeft="true"
+        />
+    <com.example.alexiaann.qqfragmentproject.View.TabBarBtn
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        alexiaann:defaultImage="@drawable/img_3"
+        alexiaann:checkedImage="@drawable/img_2"
+        alexiaann:titleStr="hello"
+        android:id="@+id/bar2"
+        android:layout_toRightOf="@+id/bar1"
+        />
+    <com.example.alexiaann.qqfragmentproject.View.TabBarBtn
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        alexiaann:defaultImage="@drawable/img_4"
+        alexiaann:checkedImage="@drawable/img_2"
+        alexiaann:titleStr="hello"
+        android:id="@+id/bar3"
+        android:layout_toRightOf="@+id/bar2"
+        />
+    <com.example.alexiaann.qqfragmentproject.View.TabBarBtn
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        alexiaann:defaultImage="@drawable/img_5"
+        alexiaann:checkedImage="@drawable/img_2"
+        alexiaann:titleStr="hello"
+        android:id="@+id/bar4"
+        android:layout_alignParentRight="true"
+        />
+</com.example.alexiaann.qqfragmentproject.View.BottomBarBtnPanel>
