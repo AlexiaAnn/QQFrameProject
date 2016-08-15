@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.example.alexiaann.qqfragmentproject.Constant.Constant;
 import com.example.alexiaann.qqfragmentproject.Fragment.BaseFragment;
 import com.example.alexiaann.qqfragmentproject.View.BottomBarBtnPanel;
 import com.example.alexiaann.qqfragmentproject.View.HeadControlPanel;

@@ -1,4 +1,4 @@
-package com.example.alexiaann.qqfragmentproject;
+package com.example.alexiaann.qqfragmentproject.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.alexiaann.qqfragmentproject.Modal.MessageListModal;
+import com.example.alexiaann.qqfragmentproject.R;
 
 import java.util.List;
 

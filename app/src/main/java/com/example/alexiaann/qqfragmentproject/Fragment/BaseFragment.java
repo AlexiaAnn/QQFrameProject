@@ -4,7 +4,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.text.TextUtils;
 
-import com.example.alexiaann.qqfragmentproject.Constant;
+import com.example.alexiaann.qqfragmentproject.Constant.Constant;
 
 /**
  * Created by AlexiaAnn on 2016/8/13 0013.
@@ -27,6 +27,8 @@ public class BaseFragment extends android.app.Fragment {
 
         if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_MESSAGE)){
             baseFragment = new MessageFragment();
+        }else if(TextUtils.equals(tag, Constant.FRAGMENT_FLAG_NEWS)){
+            baseFragment = new NewsFragment();
         }
 
         return baseFragment;

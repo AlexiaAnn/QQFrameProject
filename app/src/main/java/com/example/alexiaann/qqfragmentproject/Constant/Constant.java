@@ -1,4 +1,4 @@
-package com.example.alexiaann.qqfragmentproject;
+package com.example.alexiaann.qqfragmentproject.Constant;
 
 /**
  * Created by sks on 16/8/13.
