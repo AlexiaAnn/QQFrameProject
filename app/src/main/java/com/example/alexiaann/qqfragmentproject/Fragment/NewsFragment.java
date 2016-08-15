@@ -14,6 +14,8 @@ import com.example.alexiaann.qqfragmentproject.Constant;
 import com.example.alexiaann.qqfragmentproject.MainActivity;
 import com.example.alexiaann.qqfragmentproject.MyApplication;
 import com.example.alexiaann.qqfragmentproject.R;
+import com.example.alexiaann.qqfragmentproject.Transform.DepthPageTransformer;
+import com.example.alexiaann.qqfragmentproject.Transform.RotateDownTransformer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +26,7 @@ import java.util.List;
 public class NewsFragment extends BaseFragment {
 
     private int[] imageId;
+    private String[] titles;
     private List<ImageView> lists ;
     private ViewPager viewPager;
 
@@ -31,7 +34,8 @@ public class NewsFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        imageId =new  int[]{R.drawable.img_1,R.drawable.img_2,R.drawable.img_3, R.drawable.img_4};
+        imageId =new  int[]{R.drawable.image1,R.drawable.image2,R.drawable.image3, R.drawable.image4};
+        titles = new String[]{"image1","image2","image3","image4"};
         lists = new ArrayList<ImageView>();
 
     }
@@ -43,7 +47,13 @@ public class NewsFragment extends BaseFragment {
 
         View manageView = inflater.inflate(R.layout.new_layout,container,false);
         viewPager = (ViewPager) manageView.findViewById(R.id.viewPager);
+        viewPager.setPageTransformer(true,new RotateDownTransformer());
         viewPager.setAdapter(new PagerAdapter() {
+
+            @Override
+            public CharSequence getPageTitle(int position) {
+                return titles[position];
+            }
 
             @Override
             public Object instantiateItem(ViewGroup container, int position) {
