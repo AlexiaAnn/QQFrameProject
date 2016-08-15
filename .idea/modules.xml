@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/QQFragmentProject.iml" filepath="$PROJECT_DIR$/QQFragmentProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/QQFrameProject.iml" filepath="$PROJECT_DIR$/QQFrameProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

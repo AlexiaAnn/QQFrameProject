@@ -95,6 +95,7 @@ public class MainActivity extends Activity implements BottomBarBtnPanel.BottomPa
         if(f == null){
             Toast.makeText(getApplicationContext(), "fragment = null tag = " + tag, Toast.LENGTH_SHORT).show();
             f = BaseFragment.newInstance(tag);
+            BaseFragment.activity = MainActivity.this;
         }
         return f;
 
