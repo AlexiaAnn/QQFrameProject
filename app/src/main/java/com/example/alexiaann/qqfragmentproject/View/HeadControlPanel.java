@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.alexiaann.qqfragmentproject.Constant.Constant;
+import com.example.alexiaann.qqfragmentproject.Constant;
 import com.example.alexiaann.qqfragmentproject.R;
 
 /**

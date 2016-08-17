@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.example.alexiaann.qqfragmentproject.Constant.Constant;
+import com.example.alexiaann.qqfragmentproject.Constant;
 import com.example.alexiaann.qqfragmentproject.R;
 
 import java.util.ArrayList;
@@ -29,24 +29,11 @@ public class BottomBarBtnPanel extends RelativeLayout implements View.OnClickLis
     public interface BottomPanelCallback{
         public void onBottomPanelClick(int itemId);
     }
-
-    public BottomBarBtnPanel(Context context) {
-        this(context,null);
-    }
-
     public BottomBarBtnPanel(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
+        super(context, attrs);
     }
 
-    public BottomBarBtnPanel(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-
-
-    }
-
-
-
-    //xml文件加载完后执行,进行初始化工作
+    //xml文件加载完后执行
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();

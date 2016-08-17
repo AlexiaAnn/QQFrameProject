@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.alexiaann.qqfragmentproject.Constant.Constant;
+import com.example.alexiaann.qqfragmentproject.Constant;
 import com.example.alexiaann.qqfragmentproject.MainActivity;
-import com.example.alexiaann.qqfragmentproject.Adapter.MessageListAdapter;
+import com.example.alexiaann.qqfragmentproject.MessageListAdapter;
 import com.example.alexiaann.qqfragmentproject.Modal.MessageListModal;
 import com.example.alexiaann.qqfragmentproject.R;
 

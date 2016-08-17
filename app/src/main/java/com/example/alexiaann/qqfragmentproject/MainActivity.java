@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.example.alexiaann.qqfragmentproject.Constant.Constant;
 import com.example.alexiaann.qqfragmentproject.Fragment.BaseFragment;
 import com.example.alexiaann.qqfragmentproject.View.BottomBarBtnPanel;
 import com.example.alexiaann.qqfragmentproject.View.HeadControlPanel;
@@ -96,6 +95,7 @@ public class MainActivity extends Activity implements BottomBarBtnPanel.BottomPa
         if(f == null){
             Toast.makeText(getApplicationContext(), "fragment = null tag = " + tag, Toast.LENGTH_SHORT).show();
             f = BaseFragment.newInstance(tag);
+            BaseFragment.activity = MainActivity.this;
         }
         return f;
 
